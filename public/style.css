@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: rgb(61, 61, 53);
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    overflow: auto;
+    height: 40px;
+}
+
+nav ul, .logo-wrapper, main {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    background-color: yellow;
+    margin: 5px;
+    line-height: 40px;
+    padding: 6px;
+}
+
+.logo {
+    height: 150px;
+}
+
+.post h2{
+    color: rgb(115, 255, 0);
+}
+
+.post {
+    border: 1px solid rgba(255, 255, 0, 0.233);
+    padding: 20px;
+    margin: 5px;
+    word-wrap: break-word;
+}
+
+a, a:active, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: bisque;
+}
+
+.active {
+    border-bottom: 2px solid black;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th {
+    background-color: rgb(46, 46, 46);
+}
+
+td {
+    background-color: rgb(82, 82, 82);
+}
+
+input, select, button, td, th {
+    padding: 10px;
+}
+
+.link {
+    min-width: 150px;
+}
+  
+/* li {
+    white-space: nowrap;
+} */

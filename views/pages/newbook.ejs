@@ -1,0 +1,21 @@
+<%- include("../partials/header"); %>
+<main>
+    <div class="container">
+        <h2>Main</h2>
+        <div class="container">
+            <form action="newbook" method="post">
+                <input type="text" placeholder="book title" name="title" class="d-inline-block" required>
+                <input type="text" placeholder="book author" name="author" class="d-inline-block" required>
+                <input type="number" placeholder="book year" name="year" min="1000" max="2100" class="d-inline-block" required>
+                <select name="category" id="category" required>
+                    <option value="0" selected disabled>Select Category</option>
+                    <% locals.categories.forEach(category => { %>
+                        <option value="<%= category.id  %> "><%= category.name %></option>
+                    <% }) %>
+                </select>
+                <button type="submit">Add a book</button>
+            </form>
+        </div>
+    </div>
+</main>
+<%- include("../partials/footer"); %> 

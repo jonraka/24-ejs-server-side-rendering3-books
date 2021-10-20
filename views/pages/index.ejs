@@ -1,0 +1,30 @@
+<%- include("../partials/header"); %>
+<main>
+    <div class="container">
+        <h2>Main</h2>
+        <% if (locals.books.length) { %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% locals.books.forEach(book => { %>
+                        <tr>
+                            <td><%= book.title  %> </td>
+                            <td><%= book.author  %> </td>
+                            <td><%= book.year  %> </td>
+                            <td><%= book.category_name %></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+
+        <% } %>
+    </div>
+</main>
+<%- include("../partials/footer"); %> 
