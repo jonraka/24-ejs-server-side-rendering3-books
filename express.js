@@ -9,6 +9,8 @@ app.use(morgan("dev"));
 app.set("view engine", "ejs")
 app.use(express.static("public"))
 
+//hello123
+
 app.get("/", async (req, res) => {
     const data = {
         page: "index",
